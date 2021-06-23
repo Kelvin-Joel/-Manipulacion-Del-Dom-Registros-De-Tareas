@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style>
+        .conte_registers{
+            height: 300px;
+            overflow-y: scroll;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container w-50" id="container">
+      <h1 class="fw-bold text-center mb-5">Register De Task</h1>
+      <form class="mb-3 ">
+        <div class="form-control">
+          <input type="text" class="form-control" placeholder="Ingrese Texto" id="txt_text"/>
+          <input type="text" class="invisible" id="txt_verification">
+        </div>
+      </form>
+      <button class="btn btn-primary mb-5" id="btn_register">Guardar</button>
+     
+    
+      <div class="conte_registers p-3 border " id="conte_registers"></div>
+    </div>
+    <script src="Js/index.js"></script>
+  </body>
+</html>
